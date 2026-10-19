@@ -1,5 +1,6 @@
 {
   "version": 2,
+  "installCommand": "npm install --prefix solarpannel-frontend && npm install",
   "buildCommand": "npm run build --prefix solarpannel-frontend",
   "outputDirectory": "solarpannel-frontend/dist",
   "rewrites": [

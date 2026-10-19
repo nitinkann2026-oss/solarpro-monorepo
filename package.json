@@ -4,6 +4,10 @@
   "private": true,
   "description": "SolarPro Clean Energy Systems - Fullstack Monorepo",
   "type": "module",
+  "workspaces": [
+    "backend",
+    "solarpannel-frontend"
+  ],
   "scripts": {
     "build": "npm run build --prefix solarpannel-frontend",
     "start": "node backend/server.js",
