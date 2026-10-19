@@ -131,11 +131,16 @@ app.use((err, req, res, next) => {
  * 6. START SERVER
  * --------------------------------------------------------------------------
  */
-app.listen(PORT, () => {
-  console.log('\x1b[32m%s\x1b[0m', '=======================================================');
-  console.log(`\x1b[32m🚀 SolarPro Backend Server is RUNNING on port ${PORT}\x1b[0m`);
-  console.log(`📡 URL: http://localhost:${PORT}`);
-  console.log(`🔍 Health Check: http://localhost:${PORT}/api/health`);
-  console.log(`📋 API Docs: http://localhost:${PORT}/`);
-  console.log('\x1b[32m%s\x1b[0m', '=======================================================');
-});
+// Guard app.listen so Vercel Serverless environment can invoke app directly without port conflict
+if (!process.env.VERCEL) {
+  app.listen(PORT, () => {
+    console.log('\x1b[32m%s\x1b[0m', '=======================================================');
+    console.log(`\x1b[32m🚀 SolarPro Backend Server is RUNNING on port ${PORT}\x1b[0m`);
+    console.log(`📡 URL: http://localhost:${PORT}`);
+    console.log(`🔍 Health Check: http://localhost:${PORT}/api/health`);
+    console.log(`📋 API Docs: http://localhost:${PORT}/`);
+    console.log('\x1b[32m%s\x1b[0m', '=======================================================');
+  });
+}
+
+export default app;

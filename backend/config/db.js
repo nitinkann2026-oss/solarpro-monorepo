@@ -30,6 +30,11 @@ try {
 export let isMongoConnected = false;
 
 export const connectDB = async () => {
+  if (mongoose.connection && mongoose.connection.readyState >= 1) {
+    isMongoConnected = true;
+    return true;
+  }
+
   const mongoUri = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/solarpro';
 
   try {
