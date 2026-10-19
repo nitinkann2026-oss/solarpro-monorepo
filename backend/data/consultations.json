@@ -1,0 +1,15 @@
+[
+  {
+    "fullName": "Rahul Sharma",
+    "phone": "555-019-2834",
+    "email": "alice@example.com",
+    "propertyType": "Residential Rooftop",
+    "monthlyBill": " - ",
+    "notes": "South facing roof",
+    "ticketNumber": "SOLAR-REQ-#163018",
+    "status": "pending",
+    "calculatorEstimate": null,
+    "createdAt": "2026-10-19T14:42:03.924Z",
+    "_id": "local_1792420923924"
+  }
+]

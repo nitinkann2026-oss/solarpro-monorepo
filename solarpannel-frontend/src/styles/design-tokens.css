@@ -1,0 +1,145 @@
+/* ==========================================================================
+   SOLARPRO DESIGN SYSTEM — DESIGN TOKENS
+   Brand Colors, Typography, Spacing, Shadows, Radii & Transitions
+   ========================================================================== */
+
+:root {
+  /* --------------------------------------------------------------------------
+     Brand Color Palette — Dark Slate & Electric Solar Lime (Matching Reference)
+     -------------------------------------------------------------------------- */
+  /* Deep Midnight Slate Navy Canvas & Surfaces */
+  --color-dark-bg: #121622;
+  --color-dark-surface: #161c2b;
+  --color-dark-elevated: #1d2537;
+  --color-dark-slate-blue: #2d384e;       /* Specialized slate blue card (from reference "Our Vision") */
+  --color-dark-slate-blue-light: #384660;
+
+  /* Backward-compatible forest green tokens mapped to dark midnight navy hierarchy */
+  --color-forest-green: #121622;
+  --color-forest-green-dark: #0c101a;
+  --color-forest-green-surface: #1a2233;
+  --color-forest-green-light: #263148;
+  --color-forest-green-subtle: rgba(186, 242, 0, 0.06);
+
+  /* Warm ivory mapped to sleek dark surfaces */
+  --color-warm-ivory: #121622;
+  --color-warm-ivory-dark: #161c2b;
+  --color-warm-ivory-light: #1d2537;
+
+  /* Electric Solar Lime: Intense neon green accent from reference image */
+  --color-solar-lime: #baf200;           /* Vibrant neon electric lime */
+  --color-solar-lime-hover: #cbf92b;
+  --color-solar-lime-dark: #9ed200;
+  --color-solar-lime-tint: rgba(186, 242, 0, 0.12);
+  --color-solar-lime-tint-subtle: rgba(186, 242, 0, 0.06);
+  --color-solar-lime-glow: rgba(186, 242, 0, 0.35);
+
+  /* Clean White */
+  --color-white: #FFFFFF;
+
+  /* Text & Neutral Hierarchy */
+  --color-text-primary: #FFFFFF;          /* Pure crisp white for all main headings & titles */
+  --color-text-secondary: #94A3B8;        /* Sleek cool slate gray for descriptions/paragraphs */
+  --color-text-muted: #64748B;            /* Muted slate for metadata */
+  --color-text-light: #FFFFFF;
+  --color-text-light-muted: #94A3B8;
+  --color-text-on-lime: #0B1019;          /* Deep dark slate text on bright lime CTA buttons */
+
+  /* Borders & Dividers */
+  --color-border-subtle: rgba(255, 255, 255, 0.08);
+  --color-border-medium: rgba(255, 255, 255, 0.14);
+  --color-border-light: rgba(255, 255, 255, 0.18);
+  --color-border-lime: rgba(186, 242, 0, 0.4);
+
+  /* Card Surfaces */
+  --color-card-bg: #181f2d;
+  --color-card-border: rgba(255, 255, 255, 0.08);
+  --color-card-hover-bg: #1e2638;
+
+  /* Semantic Alerts / Badges */
+  --color-info-bg: rgba(56, 189, 248, 0.12);
+  --color-info-text: #38BDF8;
+  --color-warning-bg: rgba(251, 146, 60, 0.12);
+  --color-warning-text: #FB923C;
+  --color-success-bg: rgba(186, 242, 0, 0.12);
+  --color-success-text: #baf200;
+  --color-demo-badge-bg: rgba(255, 255, 255, 0.08);
+  --color-demo-badge-text: #CBD5E1;
+
+  /* --------------------------------------------------------------------------
+     Typography
+     -------------------------------------------------------------------------- */
+  --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  /* Font Sizes */
+  --font-size-xs: 0.75rem;    /* 12px */
+  --font-size-sm: 0.875rem;   /* 14px */
+  --font-size-base: 1rem;     /* 16px */
+  --font-size-md: 1.125rem;   /* 18px */
+  --font-size-lg: 1.25rem;    /* 20px */
+  --font-size-xl: 1.5rem;     /* 24px */
+  --font-size-2xl: 1.875rem;  /* 30px */
+  --font-size-3xl: 2.25rem;   /* 36px */
+  --font-size-4xl: 3rem;      /* 48px */
+  --font-size-5xl: 3.75rem;   /* 60px */
+  --font-size-hero: 4.25rem;  /* 68px */
+
+  /* Line Heights */
+  --leading-tight: 1.12;
+  --leading-snug: 1.25;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.65;
+
+  /* --------------------------------------------------------------------------
+     Spacing Scale
+     -------------------------------------------------------------------------- */
+  --space-1: 0.25rem;  /* 4px */
+  --space-2: 0.5rem;   /* 8px */
+  --space-3: 0.75rem;  /* 12px */
+  --space-4: 1rem;     /* 16px */
+  --space-5: 1.25rem;  /* 20px */
+  --space-6: 1.5rem;   /* 24px */
+  --space-8: 2rem;     /* 32px */
+  --space-10: 2.5rem;  /* 40px */
+  --space-12: 3rem;    /* 48px */
+  --space-16: 4rem;    /* 64px */
+  --space-20: 5rem;    /* 80px */
+  --space-24: 6rem;    /* 96px */
+
+  /* --------------------------------------------------------------------------
+     Border Radii
+     -------------------------------------------------------------------------- */
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-full: 9999px;
+
+  /* --------------------------------------------------------------------------
+     Elevation & Shadows
+     -------------------------------------------------------------------------- */
+  --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 6px 18px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.6);
+  --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.35);
+  --shadow-card-hover: 0 12px 36px rgba(0, 0, 0, 0.6), 0 0 20px rgba(186, 242, 0, 0.08);
+  --shadow-lime-glow: 0 8px 30px rgba(186, 242, 0, 0.4);
+  --shadow-lime-soft: 0 4px 18px rgba(186, 242, 0, 0.25);
+
+  /* --------------------------------------------------------------------------
+     Transitions & Motion
+     -------------------------------------------------------------------------- */
+  --transition-fast: all 0.15s ease-in-out;
+  --transition-normal: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-smooth: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* --------------------------------------------------------------------------
+     Layout Constraints
+     -------------------------------------------------------------------------- */
+  --container-max-width: 1240px;
+  --container-padding: 1.5rem;
+  --navbar-height: 80px;
+}
